@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*Root and * */
+
+:root{
+    --white-color: white;
+    --background-principal: #162c3b;
+    --background-secundario: #3f8ffc;
+    --background-terciario: #12222d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heading{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;    
+}
+
+.text{
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+body{
+    background: rgba(97, 1, 187, 0.603);
+}
+
+/*ScrollBar*/
+::-webkit-scrollbar {
+	width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: var(--white-color);
+	-webkit-border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: purple;
+    -webkit-border-radius: 0px;
+}
+
+/*Header*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3475ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content #header-name{
+    color: var(--white-color);
+    font-size: 60px;
+    z-index: 1;
+}
+
+.banner .content p{
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.banner header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    color: var(--white-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/*Sobre*/
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentBx{
+    background: var(--background-principal);
+    padding: 100px;
+    width: 50%;
+}
+
+.about .imgBx{
+    background: url(/assets/img/thais-maciel.png) no-repeat;
+    width: 50%;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Serviços*/
+
+.services {
+    background: var(--background-terciario);
+    padding: 100px;
+    text-align: center;
+}
+
+.services .services-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.services .services-container .service-Bx{
+    position: relative;
+    background: var(--white-color);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .services-container .service-Bx img{
+    max-width: 100px;
+}
+
+.services .services-container .service-Bx h2{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*Metodologia*/
+
+.metodologia {
+    background: var(--background-secundario);
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.metodologia .contentBx{
+    max-width: 800px;
+}
+
+.metodologia .imgBx{
+    margin-right: 30px;
+    max-width: 600px;
+}
+
+.metodologia .imgBx img{
+    max-width: 100%;
+}
+
+/*Por que*/
+
+.porque {
+    background: var(--background-principal);
+    padding: 100px;
+    text-align: center;
+}
+
+.porque .porque-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.porque .porque-container .porque-Bx{
+    position: relative;
+    background: var(--white-color);
+    width: 380px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porque .porque-container .porque-Bx #trofeu{
+    width: 50px;
+    margin-top: -25px;
+}
+
+.porque .porque-container .porque-Bx #star{
+    width: 50px;
+    margin-top: -25px;
+}
+
+.porque .porque-container .porque-Bx #pencil{
+    width: 50px;
+    margin-top: -25px;
+}
+
+.porque .porque-container .porque-Bx h2{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*Depoimento*/
+
+.depoimentos{
+    position: relative;
+    padding: 100px;
+    background: var(--background-terciario);
+    text-align: center;
+}
+
+.depoimentos .depoimentos-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.depoimentos .depoimentos-container .contentBx{
+    background: var(--white-color);
+    padding: 60px 50px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.depoimentos .depoimentos-container .contentBx p{
+    font-style: italic;
+}
+
+.depoimentos .depoimentos-container .contentBx h3{
+    width: 100%;
+    text-align: end;
+    font-weight: 500;
+    color: var(--background-secundario);
+}
+
+/*Contate-nos*/
+
+.contact{
+    padding: 100px;
+    background: var(--background-principal);
+    text-align: center;
+}
+
+.imgBx2{
+    background: url(/assets/img/suporte.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.redbg{
+    background: url(/assets/img/fundo-suporte.png) !important;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.about .form .inputBx{
+    margin-bottom: 40px;
+}
+
+.about .form .inputBx input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white-color);
+    border-bottom: 2px solid var(--white-color);
+}
+
+.about .form .inputBx input::placeholder{
+    color: var(--white-color);
+}
+
+.about .form .inputBx textarea{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white-color);
+    min-height: 150px;
+    border-bottom: 2px solid var(--white-color);
+}
+
+.about .form .inputBx textarea::placeholder{
+    color: var(--white-color);
+}
+
+.about .form .inputBx input[type="submit"]{
+    width: 150px;
+    background: var(--white-color);
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+/*Footer*/
+
+.footer{
+    background: var(--background-principal);
+    padding: 20px 100px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Enviado*/
+
+.content header .logo{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+.logo-subtitle{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.logo-description{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.enviado{
+    max-width: 30%;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Media Queries*/
+
+@media (max-width: 991px){
+
+    .banner{
+        padding: 50px;
+    }
+    .banner header{
+        padding: 20px 50px;
+    }
+    .banner .content h2{
+        font-size: 36px;
+    }
+    .banner .content p{
+        font-size: 16px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx{
+        width: 100%;
+        padding: 50px;
+        min-height: 400;
+        text-align: center;
+    }
+    .services{
+        padding: 50px;
+    }
+    .services .services-container{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .services .services-container .service-Bx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .metodologia{
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .metodologia .imgBx{
+        margin-top: 40px;
+        max-width: 400px;
+    }
+    .porque{
+        padding: 50px;
+    }
+    .porque .porque-container{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .porque .porque-container .porque-Bx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .depoimentos .contentBx{
+        padding: 60px 40px;
+        max-width: 550px;
+        margin-bottom: 40px;
+    }
+    .depoimentos .contentBx:last-child{
+        margin-bottom: 0px;
+    }
+    .contact{
+        padding: 50px;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+    .content header .logo{
+        font-size: 45px;
+    }
+    .logo-description{
+        margin-top: 25px;
+        font-size: 35px;
+    }
+    .enviado{
+        max-width: 60%;
+    }
+}
